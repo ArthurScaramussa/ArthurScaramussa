@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel e tesoura</title>
+</head>
+<body>
+    <script>
+        //Criando um laço de repetição e setando em true para que ele nunca pare.
+        while(true){
+            //Coletando escolha do jogador 1
+            let a = prompt("Você é o jogador 1: Digite pedra, papel ou tesoura");
+            //coletando escolha do jogador 2
+            let b = prompt("Você é o jogador 2: Digite pedra, papel ou tesoura");
+            // se o jogador 1 escolher pedra
+            if (a == "pedra") {
+                // se o jogador 2 escolher tesoura
+                if (b == "tesoura") {
+                    //então jogador 1 vence
+                    alert ("Jogador 1 venceu");
+                    //se jogador 2 escolher papel
+                } else if (b == "papel"){
+                    //então jogador 2 vence
+                    alert ("Jogador 2 venceu");
+                    //se jogador 2 escolher pedra
+                } else if (b == "pedra") {
+                    //então ocorre o empate
+                    alert ("Empate");
+                }
+    
+            } // se jogador 1 escolher tesoura
+            else if (a == "tesoura") {
+                //se jogador 2 escolher pedra
+                if (b == "pedra") {
+                    //então jogador 2 vence
+                    alert ("Jogador 2 venceu");
+                    //se jogador 2 escolher papel
+                } else if (b == "papel"){
+                    //então jogador 1 vence
+                    alert ("Jogador 1 venceu");
+                    //se jogador 2 escolher tesoura
+                } else if (b == "tesoura") {
+                    //então ocorre o empate
+                    alert ("Empate");
+                }
+            }
+              //se o jogador 1 escolher papel
+            else if (a == "papel"){
+                //se o jogador 2 escolher pedra
+                if (b == "pedra") {
+                    //então jogador 1 vence
+                    alert ("Jogador 1 venceu");
+                    //se jogador 2 escolher tesoura
+                }else if (b == "tesoura") {
+                    //então jogador 2 vence
+                    alert ("Jogador 2 venceu");
+                    //se jogador 2 escolher papel
+                }else if (b == "papel")  {
+                    //então ocorre o empate
+                    alert ("Empate");
+                }
+    
+            }
+    
+        }
+    
+    </script>
+</body>
+</html>
